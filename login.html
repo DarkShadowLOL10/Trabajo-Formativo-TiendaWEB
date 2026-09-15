@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Ingreso y Registro | Tienda Geek</title>
+
+    <!-- Aqui conectamos los archivos CSS -->
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Nexus Gaming Store </h1>
+        <nav> 
+            <a href = "index.html">Inicio</a>
+            <a href = "catalogo.html">Catalogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class = "form-container">
+            <h2>Acceso a tu Cuenta</h2>
+
+            <!-- Formulario Principal -->
+             <form id = "formularioLogin">
+                <div class = "input-group">
+                    <label for = "Correo">Correo Electronico:</label>
+                    <input type = "email" id = "Correo" placeholder = "Ejemplo@gmail.com" autocomplete = "email">
+                    <span id = "errorCorreo" class = "error-message"></span>
+                </div>
+                
+                <div class = "input-group">
+                    <label for = "password">Contraseña:</label>
+                    <input type = "password" id = "Contraseña" placeholder = "********" autocomplete = "Debe contener al menos 8 caracteres">
+                    <span id = "errorPassword" class = "error-message"></span>
+                </div>
+
+                <button type = "submit" id = "btnIngresar">Iniciar Sesion / Registrarse</button>
+             </form>
+            <hr>
+
+            <!-- Boton para invitados que lleva directo al catalogo -->
+             <div class = "invitado - section">
+                <p> ¿No quieres crear una cuenta? </p>
+                <a href = "catalogo.html" class = "btn-invitado">Continuar como invitado</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Gaming Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Aqui conectamos los archivos JS -->
+    <script src = "js/validaciones.js"></script>
+</body>
+</html>
